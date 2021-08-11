@@ -1,12 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Advanced Search</title>
-    </head>
-    <body>
-        <form action="https://google.com/search">
-            <input type="text" name="q">
-            <input type="submit" value="Google Search">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Advanced Search</title>
+</head>
+<body>
+    <header class="main">
+        <a href="index.html">Back</a>
+    </header>
+    <main class="main">
+        <form action="https://google.com/search" method="get">
+            <div>
+                <p>
+                    all these words:
+                </p>
+                <input type="text" name="as_q">
+            </div>
+            <div>
+                <p>
+                    this exact word or phrase:
+                </p>
+                <input type="text" name="as_epq">
+            </div>
+            <div>
+                <p>
+                    any of these words:
+                </p>
+                <input type="text" name="as_oq">
+            </div>
+            <div>
+                <p>
+                    none of these words:
+                </p>
+                <input type="text" name="as_eq">
+            </div>
+            <div>
+                <input type="submit" value="Advanced Search">
+            </div>
         </form>
-    </body>
+    </main>
+    <footer class="footer">
+        
+    </footer>
+</body>
 </html>
