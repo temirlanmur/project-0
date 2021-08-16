@@ -3,23 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet" type=text/css>
     <title>Search</title>
 </head>
 <body>
-    <header class="header">
-        <a href="image.html">Image Search</a>
-        <a href="advanced.html">Advanced Search</a>
-    </header>
-    <main class="main">
-        <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
-        <form action="https://google.com/search">
-            <input type="text" name="q">
-            <input type="submit" name="btnK" value="Google Search">
-            <input type="submit" name="btnI" value="I'm Feeling Lucky">
-        </form>
-    </main>
-    <footer class="footer">
+    <div class="page-wrapper">
 
-    </footer>
+        <header class="header">            
+            <a href="image.html" class="nav-link first-link">Image Search</a>
+            <a href="advanced.html" class="nav-link">Advanced Search</a>
+        </header>
+
+        <main class="main">
+            <div class="logo-container"></div>
+            <form class="search-box" action="https://google.com/search">
+                <input type="text" name="q" class="search-bar">
+                <div class="buttons-container">
+                    <input type="submit" name="btnK" class="btn" value="Google Search">
+                    <input type="submit" name="btnI" class="btn" value="I'm Feeling Lucky">
+                </div>
+            </form>
+        </main>
+
+        <footer class="footer">
+            
+        </footer>
+
+    </div>
 </body>
 </html>
