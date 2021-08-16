@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+/* Header and its elements */
+.header {
+    display: flex;
+    align-items: center;
+    height: 3.75em;
+}
+
+/* Link properties */
+.nav-link {
+    padding-right: 1em;
+    font-size: 0.8125rem;
+    color: #272727;
+}
+.nav-link:link {
+    color: #272727;
+    text-decoration: none;
+}
+.nav-link:visited {
+    color: #272727;
+    text-decoration: none;
+}
+.nav-link:hover {
+    text-decoration: underline;
+
+}
+.nav-link:active {
+    text-decoration: none;
+}
+/* End link block */
+
+.first-link {
+    margin-left: auto;
+}
+
+
+/* Main and its elements */
+.main {
+    flex: 1;
+}
+
+.logo-container {
+    height: 5.75em;
+    background-image: url("https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png");
+    background-size: auto 5.75em;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.search-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.25em;
+}
+
+/* Searchbar properties */
+.search-bar {
+    width: 36.375rem;
+    height: 2.75rem;
+    border: 1px solid #DFE1E5;
+    border-radius: 1.5em;
+}
+.search-bar:hover {
+    box-shadow: 0 0 5px #c9c9c9;
+}
+.search-bar:focus {
+    outline: none;
+    box-shadow: 0 0 5px #c9c9c9;
+}
+/* End searchbar block */
+
+.buttons-container {
+    padding-top: 1.125em;
+}
+
+/* Button properties */
+.btn {
+    font-size: 0.875rem;
+    height: 2.125rem;
+    padding: 0 1rem;
+    margin: 0.6875rem 0.25rem;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 0.25rem;
+}
+.btn:hover {
+    border: 0.5px solid #c9c9c9;
+} 
+.btn:focus {
+    outline: none;
+    border: 0.5px solid #4284f4;
+}
+/* End button block */
+
+
+/* Footer and its elements */
+.footer {
+    height: 3em;
+    background-color: #F2F2F2;
+}
