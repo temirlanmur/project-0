@@ -3,20 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet" type=text/css>
     <title>Image Search</title>
 </head>
 <body>
-    <header class="header">
-        <a href="index.html">Back</a>
-    </header>
-    <main class="main">
-        <form method="get" action="http://images.google.com/images">
-            <input type="text" name="q">
-            <input type="submit" value="Image Search">
-        </form>
-    </main>
-    <footer class="footer">
-        
-    </footer>
+    <div class="page-wrapper">
+
+        <header class="header">
+            <a href="index.html" class="nav-link first-link">Back</a>
+        </header>
+
+        <main class="main">
+            <div class="logo-container">
+                <p>images</p>
+            </div>
+            <form method="get" action="http://images.google.com/images" class="search-box">
+                <input type="text" name="q" class="search-bar">
+                <input type="image" src="img/magnifier-sm.png" class="search-btn">
+            </form>
+        </main>
+
+        <footer class="footer">
+            
+        </footer>
+
+    </div>
 </body>
 </html>
