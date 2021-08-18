@@ -1,8 +1,18 @@
+:root {
+    font-size: calc(0.25em + 1vw);
+}
+
+@media screen and (min-width: 1200px) {
+    :root {
+        font-size: 16px;
+    }
+}
+
 body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: Arial, sans-serif;
+    box-sizing: border-box;
 }
 
 .page-wrapper {
@@ -49,15 +59,29 @@ body {
 
 /* Main and its elements */
 .main {
-    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: auto;
 }
 
 .logo-container {
+    position: relative;
+    width: 100%;
     height: 5.75em;
     background-image: url("https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png");
     background-size: auto 5.75em;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center bottom;
+}
+
+@media screen and (max-aspect-ratio: 5/2) {
+    .logo-container {
+        flex: 0.6 1 auto;
+    }
+    .search-box {
+        flex: auto;
+    }
 }
 
 .search-box {
@@ -69,10 +93,14 @@ body {
 
 /* Searchbar properties */
 .search-bar {
+    box-sizing: border-box;
     width: 36.375rem;
     height: 2.75rem;
     border: 1px solid #DFE1E5;
-    border-radius: 1.5em;
+    border-radius: 1.5rem;
+    font-size: 1.25rem;
+    padding-left: 2rem;
+    padding-right: 4rem;
 }
 .search-bar:hover {
     box-shadow: 0 0 5px #c9c9c9;
@@ -90,7 +118,7 @@ body {
 /* Button properties */
 .btn {
     font-size: 0.875rem;
-    height: 2.125rem;
+    height: 2.25rem;
     padding: 0 1rem;
     margin: 0.6875rem 0.25rem;
     background-color: #f8f9fa;
@@ -111,4 +139,22 @@ body {
 .footer {
     height: 3em;
     background-color: #F2F2F2;
+}
+
+
+/* Image.html styles */
+.logo-container p {
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    left: calc(50vw + 5rem);
+    color: #4284f4;
+}
+
+.search-btn {
+    height: 1.5rem;
+    width: 1.5rem;
+    position: relative;
+    top: -2.1rem;
+    left: 16rem;
 }
