@@ -27,6 +27,7 @@ body {
     display: flex;
     align-items: center;
     height: 3.75em;
+    padding: 0.5em;
 }
 
 /* Link properties */
@@ -77,7 +78,7 @@ body {
 
 @media screen and (max-aspect-ratio: 5/2) {
     .logo-container {
-        flex: 0.6 1 auto;
+        flex: 0.5 1 auto;
     }
     .search-box {
         flex: auto;
@@ -158,3 +159,103 @@ body {
     top: -2.1rem;
     left: 16rem;
 }
+
+
+/* Advanced.html styles */
+.header-advanced {
+    justify-content: space-between;
+}
+
+.logo-adv {
+    height: 1.5em;
+    padding-left: 1em;
+}
+
+.main-adv {
+    align-items: stretch;
+}
+
+.main-adv h1 {
+    padding: 1.25em 1.75em;
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #d93025;
+    border-bottom: 1px solid #EBEBEB;
+}
+
+.adv-search-box {
+    margin: 2.5em 2.8125em;
+    color: #333333;
+    font-size: 0.8125rem;
+}
+
+.option {
+    display: flex;
+    align-self: center;
+    flex-wrap: wrap;
+    padding: 0.5em 0;
+}
+
+.option .label {
+    width: 13em;
+}
+
+.option .label h2 {
+    font-size: 1rem;
+    font-weight: 400;
+    padding-bottom: 1em;
+    margin: 0;
+}
+
+.option .input {
+    font-size: inherit;
+    min-width: 12.8em;
+    max-width: 43.8em;
+    width: 50%;
+    height: 1.92em;
+    border: 1px solid #D9D9D9;
+}
+
+.option .filler {
+    position: relative;
+    border: none;
+    padding: 1px 2px;
+}
+
+.option .explanation {
+    font-size: 0.6875rem;
+    padding-left: 1.25em;
+    color: #555555
+}
+
+.option .instr {
+    padding-left: 0;
+    font-size: inherit;
+    font-weight: 700;
+    color: #777777;
+}
+
+.option .explanation span {
+    font-family: monospace;
+}
+
+@media screen and (max-width: 1060px) {
+    .option .explanation {
+        display: none;
+    }
+}
+
+/* Button properties */
+.btn-advanced {
+    position: absolute;
+    right: 0;
+    margin-right: 0;
+    font-size: inherit;
+    background-color: #4d90fe;
+    color: #ffffff;
+}
+.btn-advanced:hover {
+    background-color: #4787EE;
+}
+/* End button block */
