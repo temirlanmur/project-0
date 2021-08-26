@@ -110,6 +110,16 @@ body {
     outline: none;
     box-shadow: 0 0 5px #c9c9c9;
 }
+
+@media screen and (max-width: 300px) {
+    .search-box {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .search-bar {
+        width: 84.875vw;
+    }
+}
 /* End searchbar block */
 
 .buttons-container {
