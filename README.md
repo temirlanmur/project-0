@@ -6,6 +6,12 @@ You may find project's specification along with initial code [here](https://cs50
 
 The project contains 3 frontpages for Google Search, Google Image Search, and Google Advanced Search. They are written purely with HTML&CSS.
 
+![Search Page](https://github.com/temirlanmur/project-0/blob/main/README-images/front-page.png)
+
+![Image Search Page](https://github.com/temirlanmur/project-0/blob/main/README-images/image-page.png)
+
+![Advanced Search Page](https://github.com/temirlanmur/project-0/blob/main/README-images/advanced-page.png)
+
 Things implemented:
 * Responsiveness for each page
 * Design and styling matching the official look of the pages as best as possible
